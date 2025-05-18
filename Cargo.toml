@@ -1,0 +1,11 @@
+[package]
+name = "rby_yew"
+version = "0.1.0"
+edition = "2025"
+license = "MIT"
+
+[dependencies]
+yew = { version = "0.21", features = ["csr"] }
+gloo = { version = "0.11.0", features = ["events", "utils"] }
+web-sys = { version = "0.3.68", features = ["Navigator", "MediaQueryList"] }
+serde_json = "1.0.115"

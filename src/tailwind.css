@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Satisfy";
+  src: url("./assets/fonts/Satisfy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Jetbrains Mono";
+  src: url("./assets/fonts/JetBrainsMono-Regular.woff2");
+}
+
+html {
+    font-size: 18px;
+}
+
+svg {
+    display: inline-block;
+    padding: 0 0.2rem;
+}
+
+.text-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-block;
+    position: relative;
+    top: -0.1rem;
+}
