@@ -4,12 +4,16 @@
 > Implementing real time multi language switch  ('EN','DE','JP','KR')
 > Licensed under `MIT`
 
-## How To
 
-### Run
+## Requirement
+- Install rustup
+- install trunk -> ` cargo install trunk ` -> add to your system path variable. Mac: export PATH="$HOME/.cargo/bin:$PATH" | Windows -> in environment variables add path C:\Users\<your username>\.cargo\bin.
 
-` cargo run `
+
+### Run or Build
+
+` trunk serve `
 
 ### Build
 
-` cargo build `
+` trunk build --release `
