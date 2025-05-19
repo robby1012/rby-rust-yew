@@ -1,13 +1,13 @@
 ### My Personal website 
 > Me mastering my Rust skill.
 > written entirely in rust with the yew framework & compiled to WASM (Web Assembly).  
-> Implementing real time multi language switch  ('EN','DE','JP','KR')
+> Implementing real time multi language switch  ('EN','DE','JP','KR') akin to React Redux
 > Licensed under `MIT`
 
 
 ## Requirement
 - Install rustup
-- install trunk -> ` cargo install trunk ` -> add to your system path variable. Mac: export PATH="$HOME/.cargo/bin:$PATH" | Windows -> in environment variables add path C:\Users\<your username>\.cargo\bin.
+- install trunk -> ` cargo install trunk ` -> add to your system path variable. Mac: export PATH="$HOME:/.cargo/bin:$PATH"
 
 
 ### Run or Build
