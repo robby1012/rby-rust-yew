@@ -7,6 +7,7 @@
 
 ## Requirement
 - Install rustup
+- ` rustup default stable && rustup add wasm32-unknown-unknown `
 - install trunk -> ` cargo install trunk ` -> add to your system path variable. Mac: export PATH="$HOME:/.cargo/bin:$PATH"
 
 
