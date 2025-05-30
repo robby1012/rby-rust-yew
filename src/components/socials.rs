@@ -1,5 +1,5 @@
 use yew::{Html, html, function_component};
-use crate::components::svg::logos::{Youtube, Twitter, Gitlab, Linkedin};
+use crate::components::svg::logos::{Youtube, Twitter, Github, Linkedin};
 use crate::ui::TextLink;
 
 struct Item {
@@ -17,8 +17,8 @@ pub fn Socials() -> Html {
             title: "Twitter",
         },
         Item {
-            link: "https://gitlab.com/robby1012",
-            icon: html! { <Gitlab /> },
+            link: "https://github.com/robby1012",
+            icon: html! { <Github /> },
             title: "Gitlab",
         },
         Item {

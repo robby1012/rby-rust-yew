@@ -15,20 +15,20 @@ pub fn skills() -> Html {
 
     let skills: Vec<Skill> = vec![
         Skill {
-            lang: "JavaScript".into(),
-            img_path: "./assets/images/tech-icons/js.png".into(),
+            lang: "C++".into(),
+            img_path: "./assets/images/tech-icons/cplus_plus.png".into(),
         },
         Skill {
-            lang: "TypeScript".into(),
-            img_path: "./assets/images/tech-icons/ts.png".into(),
+            lang: "Java".into(),
+            img_path: "./assets/images/tech-icons/java.png".into(),
+        },
+        Skill {
+            lang: "Javascript".into(),
+            img_path: "./assets/images/tech-icons/js.png".into(),
         },
         Skill {
             lang: "Node".into(),
             img_path: "./assets/images/tech-icons/node.png".into(),
-        },
-        Skill {
-            lang: "React".into(),
-            img_path: "./assets/images/tech-icons/react.png".into(),
         },
         Skill {
             lang: "Vue".into(),

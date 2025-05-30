@@ -82,16 +82,6 @@ pub fn Nav() -> Html {
 	})
     }
 
-    fn translate_projects(app_context: AppContext) -> &'static str {
-	match app_context.language.current.as_str() {
-	    "eng" => "Projects",
-	    "de" => "Projekte",
-	    "jp" => "制作",
-	    "kr" => "제작물",
-	    _ => "Projects"
-	}
-    }
-
     fn translate_contact(app_context: AppContext) -> &'static str {
 	match app_context.language.current.as_str() {
 	    "eng" => "Get in touch",
@@ -146,23 +136,14 @@ pub fn Nav() -> Html {
 			</ul>
 		    </li>
 
-	            /* Link to Projects */
-                    <li>
-                        <a href="#projects">
-                            <Button>
-                                {translate_projects(app_context.clone())}
-                            </Button>
-                        </a>
-                    </li>
-
-	            /* Link to Contact */
-                    <li>
-                        <a href="#contact">
-                            <Button is_primary={true}>
-                                {translate_contact(app_context.clone())}
-                            </Button>
-                        </a>
-                    </li>
+            /* Link to Contact */
+            <li>
+                <a href="#contact">
+                    <Button is_primary={true}>
+                        {translate_contact(app_context.clone())}
+                    </Button>
+                </a>
+            </li>
 		</ul>
 	    </nav>
 	</header>

@@ -13,6 +13,16 @@ pub fn globe(props: &Props) -> Html {
     }
 }
 
+#[function_component(Indonesia)]
+pub fn indonesia(props: &Props) -> Html {
+    html!{
+        <svg class={ handle_props_class(props) } xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+            <rect width="36" height="18" fill="#ff0000" />
+            <rect y="18" width="36" height="18" fill="#ffffff" />
+        </svg>
+    }
+}
+
 #[function_component(Germany)]
 pub fn germany(props: &Props) -> Html {
     html!{

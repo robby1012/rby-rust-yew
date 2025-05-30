@@ -16,7 +16,9 @@ pub fn contact() -> Html {
     fn handle_title(app_context: AppContext) -> &'static str {
 	match app_context.language.current.as_str() {
 	    "kr" => "편하게 연락해주세요!",
-	    "eng" | "de" | "jp" | _ => "Let's chat",
+	    "jp" => "チャットしましょう",
+		"de" => "Lass uns chatten",
+		"eng" | _ => "Let's chat",
 	}
     }
 
@@ -30,8 +32,7 @@ pub fn contact() -> Html {
 			{ ", aber ich kann auch Englisch" } <England />
 			{ ", Japanisch" } <Japan />
 			{ ", Koreanisch" } <Korea />
-			{ " und lerne momentan Polnisch" } <Poland /> { " und Arabisch" } <Egypt />
-			{ ". Du kannst mich gerne in einer dieser Sprachen anschreiben." }</p>
+			</p>
 		    <p>{ "Am liebsten bevorzuge ich " }
                         <TextLink link="mailto:robby.sitanala@gmail.com">{ "email" }<Mail /></TextLink>
                     </p>
@@ -42,10 +43,7 @@ pub fn contact() -> Html {
 		    <p>{ "母国語はドイツ語" } <Indonesia />
 			{ "ですが、英語" } <England />
 			{ "と日本語" } <Japan />
-			{ "と韓国語" } <Korea />
-			{ "も喋れます。そして、今ポーランド語" } <Poland /> { "とアラビア語" } <Egypt />
-			{ "を勉強しています。" }
-			{ "私と仕事をしてみたい、または楽しく会話してみたい、と思った方はどんな言語でも気軽に連絡して下さい。" }</p>
+			{ "と韓国語" } <Korea /></p>
 		    <p>
                         <TextLink link="mailto:robby.sitanala@gmail.com">{ "お問い合わせは" }<Mail /></TextLink>
                     </p>
@@ -59,8 +57,7 @@ pub fn contact() -> Html {
 			{ "이지만 저는 영어" } <England />
 			{ "와 일본어" } <Japan />
 			{ ",  한국어" } <Korea />
-			{ "도 가능합니다. 그뿐만 아니라 현재 폴란드어" } <Poland /> { "와 아랍어" } <Egypt />
-			{ "도 배우고 있습니다. 어떤 언어로든 저에게 부담없이 연락하주시면 됩니다." }</p>
+			</p>
 		    <p>
                         <TextLink link="mailto:robby.sitanala@gmail.com">{ "문의처" }<Mail /></TextLink>
                     </p>
@@ -74,10 +71,7 @@ pub fn contact() -> Html {
 			{ " I am happy to talk to you. " }</p>
 		    <p>{ "My mother tongue is Indonesia" } <Indonesia />
 			{ ", but I can speak English" } <England />
-			{ ", Japanese" } <Japan />
-			{ ", Korean" } <Korea />
-			{ " as well and I'm currently learning Polish" } <Poland /> { " and Arabic" } <Egypt />
-			{ " Feel free to contact me in any of those languages." }</p>
+			</p>
 		    <p>{ "My preferred way of contact is via " }
                         <TextLink link="mailto:robby.sitanala@gmail.com">{ "email" }<Mail /></TextLink>
 		    </p>

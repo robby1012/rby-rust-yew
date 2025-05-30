@@ -11,7 +11,7 @@ use crate::AppContext;
 pub fn aboutme() -> Html {
     let app_context: AppContext = use_context::<AppContext>().expect("No AppContext found!");
 
-    let programming_languages: [Html; 3] = [
+    let _programming_languages: [Html; 3] = [
         html! {
             <Tooltip value="JavaScript">
                 <img
@@ -38,7 +38,7 @@ pub fn aboutme() -> Html {
         },
     ];
 
-    let human_languages: [Html; 8] = [
+    let _human_languages: [Html; 9] = [
         html! { <Tooltip value="Indonesia"><Indonesia class="h-[1.5rem] w-[1.5rem]" /></Tooltip> },
         html! { <Tooltip value="German"><Germany class="h-[1.5rem] w-[1.5rem]" /></Tooltip> },
         html! { <Tooltip value="English"><England class="h-[1.5rem] w-[1.5rem]" /></Tooltip> },
@@ -48,7 +48,6 @@ pub fn aboutme() -> Html {
         html! { <Tooltip value="Arabic"><Egypt class="h-[1.5rem] w-[1.5rem]" /></Tooltip> },
         html! { <Tooltip value="Ainu"><Ainu class="h-[1.7rem] w-[1.7rem]" /></Tooltip> },
         html! { <Tooltip value="Uchinaaguchi"><Okinawa class="h-[1.7rem] w-[1.7rem]" /></Tooltip> },
-
     ];
 
     fn translate_aboutme_content(app_context: AppContext) -> Html {
@@ -56,12 +55,12 @@ pub fn aboutme() -> Html {
 	    "de" => html!{
 		<>
 		    <p>{ "Hallo ich heiße Robby." }</p>
-		    <p>{ "Ich bin ein Full-Stack-Ingenieur aus Indonesien" }
+		    <p>{ "Ich bin ein Software-Ingenieur aus Indonesien" }
 			{ " auch Student der Indonesia Open University in Jakarta" } <Indonesia /> { " und habe eine Leidenschaft zum" }
 			{ " Programmieren " } <Heart /> { " Haupstächlich arbeite ich mit " }
-			<strong> { "JavaScript" } </strong>
-			{ " (Node.js & React) und " } <strong> { "Rust" } </strong>
-			{ " (Actix & Yew) um coole, " }
+			<strong> { "C/C++" } </strong>
+			{ " und " } <strong> { "Rust" } </strong>
+			{ " um coole, " }
 			{ "schnelle Webapps zu programmieren." }</p>
 		    <p>{ "Hast Du noch Fragen zu Webentwicklung oder zu mir? Dann "}
                         <TextLink link="#contact">{"kontaktiere"}</TextLink>
@@ -74,8 +73,8 @@ pub fn aboutme() -> Html {
 		    <p>{ "はじめまして。マウラ・マークと申します。" }</p>
 		    <p>{ "フランクフルト" } <Germany /> { "の大学に通って日本学と韓国学を勉強しています。" }
 			{ "プログラミングに情熱を注いでいます" } <Heart /> { "普段は速くて素晴らしいウェブアプリを" }
-			{ "作る為に " } <strong> { "JavaScript"} </strong> { "(Node.jsやReact)と" }
-			<strong> { "Rust" } </strong> { "(ActixやYew)を使っています。" }</p>
+			{ "作る為に " } <strong> { "C/C++"} </strong> { "と" }
+			<strong> { "Rust" } </strong> { "を使っています。" }</p>
 		    <p>{ "興味があれば、"}
                         <TextLink link="#contact">{"連絡してください"}</TextLink>
                         {"。"}
@@ -87,8 +86,8 @@ pub fn aboutme() -> Html {
 		    <p>{ "안녕 하세요? 저는 머이라 마크입니다." }</p>
 		    <p>{ "프랑크푸르트" } <Germany /> { " 대학에 다니고 일본학과 한국학을 공부합니다. " }
 			{ "그리고 프로그래밍에도 푹 빠졌습니다" } <Heart /> { " 평소에 빠르고 좋은 웹앱을 " }
-			{ "프로그래밍하기 위해서 " } <strong> { "JavaScript" } </strong> { " (Node.js와 React)와 " }
-			<strong> { "Rust" } </strong> { "(Actix와 Yew)를 사용하고 있습니다. " }</p>
+			{ "프로그래밍하기 위해서 " } <strong> { "C/C++" } </strong> { " 와 " }
+			<strong> { "Rust" } </strong> { "를 사용하고 있습니다. " }</p>
 		    <p>{ "저와 함께 이야기를 나누고 싶거나, 같이 일해 보고 싶다면 언제든지 "}
                         <TextLink link="#contact">{"연락해주세요"}</TextLink>
                         {"."}
@@ -98,12 +97,12 @@ pub fn aboutme() -> Html {
 	    "eng" | _ => html! {
 		<>
 		    <p>{ "Hi! My name is Robby" }</p>
-		    <p>{ "I'm a Full Stack Engineer From Indonesia" }
+		    <p>{ "I'm a Software Engineer From Indonesia" }
 			{ " also Indonesia Open University Student in Jakarta" } <Indonesia />
 			{ " with a passion for programming" } <Heart />
-			{ " I mostly work with " } <strong> { "JavaScript" } </strong>
-			{ " (Node.js & React) and " } <strong> { "Rust" } </strong>
-			{ " (Actix & Yew) to develop cool and fast webapps." }</p>
+			{ " I mostly work with " } <strong> { "C/C++" } </strong>
+			{ " and " } <strong> { "Rust" } </strong>
+			{ " to develop cool and fast apps." }</p>
 		    <p>{ "If you have any web development needs, feel free to "}
                         <TextLink link="#contact">{"contact"}</TextLink>
                         {" or get to know me a little better." }</p>
