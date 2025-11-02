@@ -10,7 +10,7 @@ RUN wget -O trunk.tar.gz https://github.com/trunk-rs/trunk/releases/download/v0.
 RUN make init
 RUN make build
 
-FROM nginx:stable AS server
+FROM nginx:1.29.3 AS server
 
 COPY --from=builder /usr/src/website/dist/ /usr/share/nginx/html/
 
